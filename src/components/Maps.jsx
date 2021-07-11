@@ -1,5 +1,5 @@
 import React from 'react'
-import {Map} from "./utils"
+import Map from "./utils"
 import image from "../images/Sponsored.svg"
 
 
@@ -12,7 +12,7 @@ const Maps = () => {
                 <p className="features-regular">See LaslesVPN everywhere to make it easier for you when you move <br /> locations.</p>
                  <Map/>
                 <div className="companies">
-                    <img src={image} alt="companies" />
+                <img src={image} alt="companies" />
                 </div>
                 </div>
 
