@@ -1,10 +1,5 @@
 import React from 'react'
-
-
-
-
  
-
 export const FeaturesImg = () => {
   return (
     <div className="features-img">
