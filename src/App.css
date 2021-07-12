@@ -14,6 +14,7 @@
 
 html{
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 
@@ -48,6 +49,7 @@ img{
   max-width: 1140px;
   margin: 0 auto;
   padding: 1rem 2rem 0 2rem ;
+ 
 }
 
 
@@ -124,6 +126,10 @@ margin: 2rem 0;
   margin-bottom: 2rem;
   color: var(--main-color-deep-black);
  
+}
+.signin:hover{
+   transition:all 300ms ease-in-out;
+   color: var(--main-color-red);
 }
 .signup{
   border: 1px solid var(--main-color-red);
@@ -590,7 +596,11 @@ margin-left: 1rem;
 }
 .footer-link li{
 color: var(--main-color-light-black);
-
+transition: all 300ms ease-in-out;
+cursor: pointer;
+}
+.footer-link li:hover {
+  color:var(--main-color-red);
 }
 
 .social  {
@@ -654,11 +664,13 @@ color: var(--main-color-light-black);
   .links {
     font-size: 1.2rem;
     margin: 0 2rem ;
+   transition: all 300ms ease-in-out;
+   color: var(--main-color-light-black);
   }
-
-  .item {
-   
+  .links:hover{
+    color: var(--main-color-red);
   }
+  
   .hamburger {
     display: none;
    
@@ -683,7 +695,7 @@ color: var(--main-color-light-black);
   .signup {
     border: 1px solid var(--main-color-red);
     color: var(--main-color-red);
-    padding: 0.5rem 1.5rem;
+    padding: .5rem 1.5rem;
     border-radius: 10px;
   }
   /************************************************** hero section ***************************************/
@@ -889,7 +901,7 @@ color: var(--main-color-light-black);
      transform: translateX(-30%);
    }
    .links{
-     font-size: 1.5rem;
+     font-size: 1.6rem;
    }
   .btn-header{
     font-size: 1.5rem;
@@ -899,7 +911,7 @@ color: var(--main-color-light-black);
   }
   
   .signup {
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     border-radius: 20px;
     margin-left: 1rem;
   }

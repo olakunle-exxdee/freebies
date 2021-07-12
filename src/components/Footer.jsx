@@ -21,7 +21,7 @@ import {FaFacebookSquare,FaTwitter,FaInstagram} from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer id="footer" className="footer">
       <div className="footer-wrapper">
         <div className="footer-header">
              <div className="logo">

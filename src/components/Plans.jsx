@@ -11,7 +11,7 @@ const FeaturesImg2 = () => {
   )
   }
 const Plans = () => {
-  return <section className="plans">
+  return <section id="pricing" className="plans">
     <div className="plans-wrapper">
       <div className="plans-header">
         <p className="features-medium">Choose Your Plan</p>

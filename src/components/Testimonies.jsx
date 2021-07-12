@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import person from "../components/dataSlider"
 import {BsArrowLeftShort,BsArrowRightShort} from "react-icons/bs"
 
+
 const Testimonies = () => {
     const [index, setIndex]= useState(0)
     
     const {image,name,location,text}= person[index]
    
-
     const checkNumber = (number) => {
     if (number > person.length - 1) {
       return 0;
@@ -32,7 +32,7 @@ const Testimonies = () => {
    
     return (
         <>
-        <section className="testimonies">
+        <section id="testimonies" className="testimonies">
             <div className="testimonies-wrapper">
     <p className="features-medium">Trusted by Thousands of <br /> Happy Customer</p>
     <p className="features-regular">These are the stories of our customers who have joined us with great 

@@ -1,10 +1,21 @@
 import React, { useState,useEffect } from "react";
 import { Sling as Hamburger } from 'hamburger-react'
 import { Logo } from "./Footer";
+import { Link as LinkScroll } from "react-scroll";
+
+
+
 
 const Header = () => {
   const [openMenu,setOpenMenu]= useState(false)
   const openHambuger = openMenu ?"navbar-2 open":"navbar-2"
+   const [activeLink, setActiveLink] = useState(null);
+  const [scrollActive, setScrollActive] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScrollActive(window.scrollY > 20);
+    });
+  }, []);
   return (
     <header className="header">
       <nav className="navbar">
@@ -22,11 +33,12 @@ const Header = () => {
         <div className={openHambuger}>
          <div className="list-group">
           <ul className="list">
-             <li className="item"><a className="links" href="#">About</a></li>
-             <li className="item"><a className="links" href="#">Features</a></li> 
-             <li className="item"><a className="links" href="#">Pricing</a></li> 
-             <li className="item"><a className="links" href="#">Testimonials</a></li>
-             <li className="item"><a className="links" href="#">Help</a></li>
+             <li className="item"><a className="links" href="#about">About</a></li>
+             <li className="item"><a className="links" href="#features">Features</a></li> 
+             <li className="item"><a className="links" href="#pricing">Pricing</a></li> 
+             <li className="item"><a className="links" href="#testimonies">Testimonials</a></li>
+             <li className="item"><a className="links" href="#footer">Help</a></li>
+            
           </ul>
          </div>
          <div className="auth-group">

@@ -239,7 +239,7 @@ export const FeaturesSVG = () => {
 
 const Features = () => {
     return (
-      <section className="features">
+      <section id="features" className="features">
           <div className="features-wrapper">
                 <FeaturesSVG/>
 

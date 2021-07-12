@@ -7,7 +7,7 @@ import server from "../images/Server.svg"
 const Hero = () => {
     return (
         <>
-        <section className="hero">
+        <section id="about" className="hero">
           <div className="hero-wrapper">
            <div className="text-wrapper">
             <p className="hero-heading">Want anything to be easy with <span className="bold">LaslesVPN.</span></p>
