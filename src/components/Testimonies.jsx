@@ -69,10 +69,10 @@ const Testimonies = () => {
         
     <div className="testimonies-group">
         <div className="buttons">
-            <div  onClick={()=>setIndex(0)} className={index ===0?"rounded-btn active":"rounded-btn"}></div>
-            <div   onClick={()=>setIndex(1)}  className={index ===1?"rounded-btn active":"rounded-btn"}></div>
-            <div   onClick={()=>setIndex(2)}  className={index ===2?"rounded-btn active":"rounded-btn"}></div>
-            <div   onClick={()=>setIndex(3)}  className={index ===3?"rounded-btn active":"rounded-btn"}></div>
+            <div  onClick={()=>setIndex(0)} className={index ===0?"rounded-btn activer-btn":"rounded-btn"}></div>
+            <div   onClick={()=>setIndex(1)}  className={index ===1?"rounded-btn activer-btn":"rounded-btn"}></div>
+            <div   onClick={()=>setIndex(2)}  className={index ===2?"rounded-btn activer-btn":"rounded-btn"}></div>
+            <div   onClick={()=>setIndex(3)}  className={index ===3?"rounded-btn activer-btn":"rounded-btn"}></div>
         </div>       
         <div className="testimonies-btn-group">
              <div className="left">

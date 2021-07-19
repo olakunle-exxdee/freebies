@@ -17,7 +17,8 @@ const Header = () => {
     });
   }, []);
   return (
-    <header className="header">
+   <div className={scrollActive?"header-section fixed":"header-section"}>
+      <header className="header">
       <nav className="navbar">
         <div className="navbar-1">
           <div className="logo">
@@ -33,11 +34,63 @@ const Header = () => {
         <div className={openHambuger}>
          <div className="list-group">
           <ul className="list">
-             <li className="item"><a className="links" href="#about">About</a></li>
-             <li className="item"><a className="links" href="#features">Features</a></li> 
-             <li className="item"><a className="links" href="#pricing">Pricing</a></li> 
-             <li className="item"><a className="links" href="#testimonies">Testimonials</a></li>
-             <li className="item"><a className="links" href="#footer">Help</a></li>
+             <li className="item"><LinkScroll onClick={() => setOpenMenu(false)}
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={300}
+                onSetActive={() => {
+                  setActiveLink("about");
+                }}className={
+                  activeLink === "about" ? "links active " : "links"
+                }>About</LinkScroll></li>
+             <li className="item">
+               <LinkScroll 
+                onClick={() => setOpenMenu(false)}
+                activeClass="active"
+                to="features"
+                spy={true}
+                smooth={true}
+                duration={300}
+                onSetActive={() => {
+                setActiveLink("features");}}
+                className={
+                  activeLink === "features" ? "links active" : "links"}>Features</LinkScroll></li> 
+             <li className="item">
+               <LinkScroll 
+                onClick={() => setOpenMenu(false)}
+                activeClass="active"
+                to="pricing"
+                spy={true}
+                smooth={true}
+                duration={300}
+                onSetActive={() => {
+                setActiveLink("pricing");}}
+                className={
+                  activeLink === "pricing" ? "links active" : "links"}>pricing</LinkScroll></li>  
+             <li className="item"><LinkScroll 
+                onClick={() => setOpenMenu(false)}
+                activeClass="active"
+                to="testimonies"
+                spy={true}
+                smooth={true}
+                duration={300}
+                onSetActive={() => {
+                setActiveLink("testimonies");}}
+                className={
+                  activeLink === "testimonies" ? "links active" : "links"}>testimonies</LinkScroll></li>
+             <li className="item"><LinkScroll 
+                onClick={() => setOpenMenu(false)}
+                activeClass="active"
+                to="footer"
+                spy={true}
+                smooth={true}
+                duration={300}
+                onSetActive={() => {
+                setActiveLink("footer");}}
+                className={
+                  activeLink === "footer" ? "links active" : "links"}>Help</LinkScroll></li>
             
           </ul>
          </div>
@@ -48,6 +101,7 @@ const Header = () => {
         </div>
       </nav>
     </header>
+   </div>
   );
 };
 
